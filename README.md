@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/59287328/73449887-88af2300-43a7-11ea-9503-f9f374151294.png" width="100%">
+<img src="https://user-images.githubusercontent.com/59287328/73450168-33274600-43a8-11ea-8c05-f699a73f562f.png" width="100%">
 
 # Cambridge-Dictionary-Miner
 Cambridge Dictionary 영어 사전 웹 크롤링 라이브러리
