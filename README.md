@@ -1,10 +1,10 @@
+<img src="https://user-images.githubusercontent.com/59287328/73449887-88af2300-43a7-11ea-9503-f9f374151294.png" width="100%">
+
 # Cambridge-Dictionary-Miner
 Cambridge Dictionary 영어 사전 웹 크롤링 라이브러리
 
 * 캠브리지 영어 사전 크롤링
 * 캡챠 우회 없음
-
-![logo-lrg](https://user-images.githubusercontent.com/59287328/73449764-4554b480-43a7-11ea-9dc7-1d6e6c585ed1.png)
 
 예시)
 ```
