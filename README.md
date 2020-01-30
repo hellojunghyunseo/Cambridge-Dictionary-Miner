@@ -58,4 +58,4 @@ Cambridge Dictionary 영어 사전 웹 크롤링 라이브러리
 * JSON 파일로 DB에 저장
 
 ### 패키지 리스트
-![PackgeList](https://user-images.githubusercontent.com/59287328/73455771-0c6f0c80-43b4-11ea-9371-7d06a529ff6c.png)
+![PackgeList](https://user-images.githubusercontent.com/59287328/73455986-67a0ff00-43b4-11ea-8233-8d6ee7c58de8.png)
