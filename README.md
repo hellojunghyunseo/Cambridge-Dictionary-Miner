@@ -6,7 +6,21 @@ Cambridge Dictionary 영어 사전 웹 크롤링 라이브러리
 * 캠브리지 영어 사전 크롤링
 * 캡챠 우회 없음
 
-예시)
+#### 예시)
+```
+"miner" 라고 검색하였을 때 (검색 결과 1개)
+[
+  { 
+    'origin': 'miner', 
+    'word': 'miner', 
+    'pos': 'noun', 
+    'mean': '광부',
+    'UKpron': 'ˈmaɪ·nər', 
+    'USpron': 'ˈmɑɪ·nər'
+  }
+]
+```
+"can" 라고 검색하였을 때 (검색 결과 2개)
 ```
 [
 {
@@ -18,7 +32,7 @@ Cambridge Dictionary 영어 사전 웹 크롤링 라이브러리
   'USpron': 'kæn'
 }, 
 {
-    'origin': 'origin',
+    'origin': 'can',
     'word': 'can', 
     'pos': 'noun', 
     'mean': '통조림,캔', 
@@ -27,6 +41,13 @@ Cambridge Dictionary 영어 사전 웹 크롤링 라이브러리
   }
 ]
 ```
+#### JSON 설명서 
+* origin: 원래의 단어
+* word: 검색된 단어
+* pos: 형태소
+* mean: 의미
+* UKpron: 영국식 발음
+* USpron: 미국식 발음
 
 #### 개발 라이브러리
 * 파이썬
