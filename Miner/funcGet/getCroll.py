@@ -11,30 +11,30 @@ def getCroll(origin):
     if len(origin) <= 1: # ` 과 같은 가비지 문자일때
         return setNoneData(origin)
 
-    try:
-        areas = getAreas(page)
+    areas = getAreas(page)
 
-        wordInfo = list()
+    wordInfo = list()
 
-        for area in areas:
-            word = getWord(area)
+    for area in areas:
+        word = getWord(area)
 
-            pos = getPos(area)
+        if word == '':
+            return wordInfo.append(setNoneData(origin))
 
-            mean = getMean(area)
+        pos = getPos(area)
 
-            pron = getProns(area)
+        mean = getMean(area)
 
-            wordInfo.append({
-                'origin': origin,
-                'word': word,
-                'pos': pos,
-                'mean': mean,
-                'UKpron': pron['UK'],
-                'USpron': pron['US']
-            })
-    except:
-        return setNoneData(origin)
+        pron = getProns(area)
+
+        wordInfo.append({
+            'origin': origin,
+            'word': word,
+            'pos': pos,
+            'mean': mean,
+            'UKpron': pron['UK'],
+            'USpron': pron['US']
+        })
 
     if not wordInfo: #빈 리스트 일시
         return setNoneData(origin)
@@ -59,10 +59,20 @@ def getAreas(page):
     return areas
 
 def getWord(area):
-    return area.find("span", class_="dhw").text.strip()
+    try:
+        word = area.find("span", class_="dhw").text.strip()
+    except:
+        word = ''
+
+    return word
 
 def getPos(area):
-    return area.find("span", class_="pos").text.strip()
+    try:
+        pos = area.find("span", class_="pos").text.strip()
+    except:
+        pos = ''
+
+    return pos
 
 def getMean(area):
     list = area.find_all("span", class_="trans")
